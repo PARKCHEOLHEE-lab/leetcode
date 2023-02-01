@@ -10,9 +10,8 @@ class Solution:
         Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
     
     """ 
-    
     def removeDuplicates(self, nums: List[int]) -> int:
-        if len(nums) == 2 and all(nums[0] == n for n in nums):
+        if all(nums[0] == n for n in nums):
             return 1
         
         ni = 0
