@@ -48,6 +48,7 @@ class Solution:
         
         return area
     
+    # Time Limit Exceeded
     def maxAreaNaive(self, height: List[int]) -> int:
         area = 0
         for hi, each_height in enumerate(height):
@@ -61,7 +62,3 @@ class Solution:
                     area = a
         
         return area
-    
-assert Solution().maxArea([1,8,6,2,5,4,8,3,7]) == 49
-
-
