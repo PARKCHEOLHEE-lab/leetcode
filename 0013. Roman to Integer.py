@@ -43,6 +43,22 @@ class Solution:
     C can be placed before D (500) and M (1000) to make 400 and 900.
     Given a roman numeral, convert it to an integer.
     """
+
+    roman_numerals = {
+        "I": 1,
+        "IV": 4,
+        "V": 5,
+        "IX": 9,
+        "X": 10,
+        "XL": 40,
+        "L": 50,
+        "XC": 90,
+        "C": 100,
+        "CD": 400,
+        "D": 500,
+        "CM": 900,
+        "M": 1000,
+    }
     
     def romanToInt(self, s: str) -> int:
         
@@ -65,9 +81,29 @@ class Solution:
                 ri += 1
         
         return total_integer
-    
 
-print(Solution().romanToInt("III"), 3)
-print(Solution().romanToInt("LVIII"), 58)
-print(Solution().romanToInt("MCMXCIV"), 1994)
-print(Solution().romanToInt("XCII"), 92)
+    def romanToInt2(self, s: str) -> int:
+        
+        integer = 0
+
+        si = 0
+        while si < len(s):
+            
+            curr_s = s[si]
+            next_s = s[(si + 1) % len(s)]
+            if si == len(s) - 1:
+                next_s = ""
+
+            merged_s = curr_s + next_s
+            
+            roman_to_integer = self.roman_numerals.get(merged_s)
+            if roman_to_integer is None:
+                roman_to_integer = self.roman_numerals.get(curr_s)
+                si += 1
+
+            else:
+                si += 2
+
+            integer += roman_to_integer
+        
+        return integer
