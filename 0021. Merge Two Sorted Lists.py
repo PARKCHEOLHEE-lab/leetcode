@@ -47,3 +47,39 @@ class Solution:
 
         # why is the dummy updated?
         return dummy.next 
+    
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        
+        cursor_1 = list1
+        cursor_2 = list2
+        
+        merged = ListNode()
+        dummy = merged
+
+        while cursor_1 or cursor_2:
+            
+            if cursor_1 is None:
+                dummy.next = cursor_2
+                break
+            elif cursor_2 is None:
+                dummy.next = cursor_1    
+                break
+
+            if cursor_1.val <= cursor_2.val:
+                dummy.next = cursor_1
+                cursor_1 = cursor_1.next
+
+            else:
+                dummy.next = cursor_2
+                cursor_2 = cursor_2.next
+            
+            dummy = dummy.next
+            
+        return merged.next
+
+
+if __name__ == "__main__":
+    list1 = ListNode(val=1, next=ListNode(val=2, next=ListNode(val=4, next=None)))
+    list2 = ListNode(val=1, next=ListNode(val=3, next=ListNode(val=4, next=None)))
+    
+    Solution().mergeTwoLists(list1, list2)
