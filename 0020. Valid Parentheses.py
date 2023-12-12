@@ -54,8 +54,35 @@ class Solution:
                 return False
             
         return len(stack) == 0
-    
 
+    def isValid3(self, s: str) -> bool:
+
+        if len(s) % 2 != 0:
+            return False
+
+        brackets = {
+            "(": ")",
+            "[": "]",
+            "{": "}",
+        }
+        
+        stack = []
+
+        for bracket in s:
+            
+            # opening bracket
+            if bracket in brackets:
+                stack.append(bracket)
+                continue
+            
+            if len(stack) == 0:
+                return False
+
+            # closing bracket
+            if bracket != brackets[stack.pop()]:
+                return False
+
+        return len(stack) == 0
 
     
 print(Solution().isValid2("(([]){})"), True)
