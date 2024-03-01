@@ -1,3 +1,9 @@
+<style>
+table {
+    font-size: 0.7em;
+}
+</style>
+
 ### Solving LeetCode Problems
 
 | Problem Number | Problem Name | Difficulty | Concepts | Solution File |
@@ -28,3 +34,4 @@
 | 0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | BFS, DFS | [0200. Number of Islands.py](./0200.%20Number%20of%20Islands.py) |
 | 0674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence) | Easy |  | [0674. Longest Continuous Increasing Subsequence.py](./0674.%20Longest%20Continuous%20Increasing%20Subsequence.py) |
 | 0684 | [Baseball Game](https://leetcode.com/problems/baseball-game) | Easy | Stack | [0684. Baseball Game.py](./0684.%20Baseball%20Game.py) |
+
