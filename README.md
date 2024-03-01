@@ -1,9 +1,3 @@
-<style>
-table {
-    font-size: 0.7em;
-}
-</style>
-
 ### Solving LeetCode Problems
 
 | Problem Number | Problem Name | Difficulty | Concepts | Solution File |
