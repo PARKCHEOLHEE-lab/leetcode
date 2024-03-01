@@ -34,8 +34,16 @@ class Solution:
     WATER = "0"
     LAND = "1"
     DIRECTIONS = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+    
+    BFS = "BFS"
+    DFS = "DFS"
+    
+    def __init__(self, mode: str = "BFS") -> None:
+        assert mode in (self.BFS, self.DFS)
+        self.mode = mode
+        self.num_islands = 0
 
-    def visit_island(self, grid: List[List[str]], r: int, c: int, visited: List[List[bool]]) -> None:
+    def visit_island_bfs(self, grid: List[List[str]], r: int, c: int, visited: List[List[bool]]) -> None:
         queue = deque([(r, c)])
         while queue:
             ri, ci = queue.popleft()
@@ -44,43 +52,35 @@ class Solution:
                 for dr, dc in self.DIRECTIONS:
                     queue.append((ri + dr, ci + dc))
 
-                visited[ri][ci] = True
+                visited[ri][ci] = True    
+
+    def visit_island_dfs(self, grid: List[List[str]], r: int, c: int, visited: List[List[bool]]) -> None:
+        visited[r][c] = True
+        
+        for dr, dc in self.DIRECTIONS:
+            nr = r + dr
+            nc = c + dc
+            
+            if 0 <= nr < len(grid) and 0 <= nc < len(grid[0]) and visited[nr][nc] is False and grid[nr][nc] == self.LAND:
+                self.visit_island_dfs(grid, nr, nc, visited)
 
     def numIslands(self, grid: List[List[str]]) -> int:
-        num_islands = 0
-        
         if len(grid) == 0:
-            return num_islands
-
+            return self.num_islands
+        
         row_num = len(grid)
         col_num = len(grid[0])
-
+        
         visited = [[False] * col_num for _ in range(row_num)]
-
+        
         for r in range(row_num):
             for c in range(col_num):
-                if grid[r][c] == self.LAND and not visited[r][c]:
-                    self.visit_island(grid, r, c, visited)
-                    num_islands += 1
+                if grid[r][c] == self.LAND and visited[r][c] is False:
+                    if self.mode == self.BFS:
+                        self.visit_island_bfs(grid, r, c, visited)
+                    elif self.mode == self.DFS:
+                        self.visit_island_dfs(grid, r, c, visited)
 
-        return num_islands
-    
-    
-if __name__ == "__main__":
-    s = Solution()
-    grid = [
-        ["1", "1", "1", "1", "0"], 
-        ["1", "1", "0", "1", "0"], 
-        ["1", "1", "0", "0", "0"], 
-        ["0", "0", "0", "0", "0"]
-    ]
-    
-    grid = [
-        ["1","1","0","0","0"], 
-        ["1","1","0","0","0"], 
-        ["0","0","1","0","0"], 
-        ["0","0","0","1","1"]
-    ]
-    
-    print(s.numIslands(grid))
+                    self.num_islands += 1
 
+        return self.num_islands
