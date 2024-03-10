@@ -25,7 +25,7 @@
 | 0021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy |  | [0021. Merge Two Sorted Lists.py](./0021.%20Merge%20Two%20Sorted%20Lists.py) |
 | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Easy |  | [0026. Remove Duplicates from Sorted Array.py](./0026.%20Remove%20Duplicates%20from%20Sorted%20Array.py) |
 | 0027 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy |  | [0027. Remove Element.py](./0027.%20Remove%20Element.py) |
-| 0042 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers | [0042. Trapping Rain Water.py](./0042.%20Trapping%20Rain%Water.py) |
+| 0042 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers | [0042. Trapping Rain Water.py](./0042.%20Trapping%20Rain%20Water.py) |
 | 0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | BFS, DFS | [0200. Number of Islands.py](./0200.%20Number%20of%20Islands.py) |
 | 0674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence) | Easy |  | [0674. Longest Continuous Increasing Subsequence.py](./0674.%20Longest%20Continuous%20Increasing%20Subsequence.py) |
 | 0684 | [Baseball Game](https://leetcode.com/problems/baseball-game) | Easy | Stack | [0684. Baseball Game.py](./0684.%20Baseball%20Game.py) |
