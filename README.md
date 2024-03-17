@@ -28,7 +28,7 @@
 | 0042 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers | [0042. Trapping Rain Water.py](./0042.%20Trapping%20Rain%20Water.py) |
 | 0121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | Two Pointers | [0121. Best Time to Buy and Sell Stock.py](./0121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.py) |
 | 0122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Medium |  | [0122. Best Time to Buy and Sell Stock II.py](./0122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.py) |
-| 0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands) | Medium | BFS, DFS | [0200. Number of Islands.py](./0200.%20Number%20of%20Islands.py) |
+| 0235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | Medium | Binary Search Tree | [0235. Lowest Common Ancestor of a Binary Search Tree.py](./0235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.py) |
 | 0674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence) | Easy |  | [0674. Longest Continuous Increasing Subsequence.py](./0674.%20Longest%20Continuous%20Increasing%20Subsequence.py) |
 | 0684 | [Baseball Game](https://leetcode.com/problems/baseball-game) | Easy | Stack | [0684. Baseball Game.py](./0684.%20Baseball%20Game.py) |
 
