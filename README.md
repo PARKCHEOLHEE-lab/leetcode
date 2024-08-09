@@ -34,4 +34,5 @@
 | 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [0344. Reverse String.py](./0344.%20Reverse%20String.py) |
 | 0674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence) | Easy |  | [0674. Longest Continuous Increasing Subsequence.py](./0674.%20Longest%20Continuous%20Increasing%20Subsequence.py) |
 | 0684 | [Baseball Game](https://leetcode.com/problems/baseball-game) | Easy | Stack | [0684. Baseball Game.py](./0684.%20Baseball%20Game.py) |
+| 0704 | [Binary Search](https://leetcode.com/problems/binary-search) | Medium | Binary Search | [0704. Binary Search.py](./0704.%20Binary%20Search.py) |
 
