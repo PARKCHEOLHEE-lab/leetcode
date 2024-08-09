@@ -29,6 +29,7 @@
 | 0079 | [Word Search](https://leetcode.com/problems/word-search) | Medium | DFS | [0079. Word Search.py](./0079.%20Word%20Search.py) |
 | 0121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | Two Pointers | [0121. Best Time to Buy and Sell Stock.py](./0121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.py) |
 | 0122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii) | Medium |  | [0122. Best Time to Buy and Sell Stock II.py](./0122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.py) |
+| 0167 | [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted) | Medium | Two Pointers | [0167. Two Sum II.py](./0167.%20Two%20Sum%20II.py) |
 | 0235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) | Medium | Binary Search Tree | [0235. Lowest Common Ancestor of a Binary Search Tree.py](./0235.%20Lowest%20Common%20Ancestor%20of%20a%20Binary%20Search%20Tree.py) |
 | 0344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | Easy | Two Pointers | [0344. Reverse String.py](./0344.%20Reverse%20String.py) |
 | 0674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence) | Easy |  | [0674. Longest Continuous Increasing Subsequence.py](./0674.%20Longest%20Continuous%20Increasing%20Subsequence.py) |
