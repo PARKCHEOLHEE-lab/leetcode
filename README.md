@@ -36,3 +36,5 @@
 | 0684 | [Baseball Game](https://leetcode.com/problems/baseball-game) | Easy | Stack | [0684. Baseball Game.py](./0684.%20Baseball%20Game.py) |
 | 0704 | [Binary Search](https://leetcode.com/problems/binary-search) | Medium | Binary Search | [0704. Binary Search.py](./0704.%20Binary%20Search.py) |
 
+
+| 0242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram) | Eash | | [0242. Valid Anagram.py](./0242.%20Valid%20Anagram.py) |
