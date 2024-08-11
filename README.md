@@ -25,6 +25,7 @@
 | 0021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Easy |  | [0021. Merge Two Sorted Lists.py](./0021.%20Merge%20Two%20Sorted%20Lists.py) |
 | 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Easy |  | [0026. Remove Duplicates from Sorted Array.py](./0026.%20Remove%20Duplicates%20from%20Sorted%20Array.py) |
 | 0027 | [Remove Element](https://leetcode.com/problems/remove-element) | Easy |  | [0027. Remove Element.py](./0027.%20Remove%20Element.py) |
+| 0033 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Medium | Binary Search | [0033. Search in Rotated Sorted Array.py](./0033.%20Search%20in%20Rotated%20Sorted%20Array.py) |
 | 0042 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Hard | Two Pointers | [0042. Trapping Rain Water.py](./0042.%20Trapping%20Rain%20Water.py) |
 | 0079 | [Word Search](https://leetcode.com/problems/word-search) | Medium | DFS | [0079. Word Search.py](./0079.%20Word%20Search.py) |
 | 0121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Easy | Two Pointers | [0121. Best Time to Buy and Sell Stock.py](./0121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock.py) |
