@@ -37,4 +37,6 @@
 | 0674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence) | Easy |  | [0674. Longest Continuous Increasing Subsequence.py](./0674.%20Longest%20Continuous%20Increasing%20Subsequence.py) |
 | 0684 | [Baseball Game](https://leetcode.com/problems/baseball-game) | Easy | Stack | [0684. Baseball Game.py](./0684.%20Baseball%20Game.py) |
 | 0704 | [Binary Search](https://leetcode.com/problems/binary-search) | Medium | Binary Search | [0704. Binary Search.py](./0704.%20Binary%20Search.py) |
+| 0912 | [Sort an Array](https://leetcode.com/problems/sort-an-array) | Medium | Sorting | [0912. Sort an Array.py](./0912.%20Sort%20an%20Array.py) |
+
 
