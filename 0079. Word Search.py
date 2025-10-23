@@ -65,8 +65,57 @@ class Solution:
                     return True
         
         return False
+    
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        row = len(board)
+        col = len(board[0])
+                    
+        bottom = (1, 0)
+        right = (0, 1)
+        up = (-1, 0)
+        left = (0, -1)
+
+        for r in range(row):
+            for c in range(col):
+                if board[r][c] != word[0]:
+                    continue
+                
+                # (row_index, col_index, word_index, independent_visited)
+                stack = [(r, c, 0, set())]
+
+                while stack:
+                    curr_r, curr_c, wi, visited = stack.pop()
+                    
+                    if (
+                        curr_r < 0 
+                        or curr_r >= row 
+                        or curr_c < 0 
+                        or curr_c >= col 
+                        or (curr_r, curr_c) in visited
+                        or board[curr_r][curr_c] != word[wi]
+                    ):
+                        continue
+                                        
+                    if wi == len(word) - 1:
+                        return True
+
+                    # using `|` is faster than set(list(visited) + [(curr_r, curr_c)])
+                    visited_updated = visited | {(curr_r, curr_c)}
+                    
+                    # four-direction search
+                    for dr, dc in [left, up, right, bottom]:
+                        next_r = curr_r + dr
+                        next_c = curr_c + dc
+                        stack.append((next_r, next_c, wi + 1, visited_updated))
+                
+        return False
 
 if __name__ == "__main__":
+
+    word = "SEE"
+    board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+    assert Solution().exist(board, word) == True
+    
     word = "ABCDEB"
     board = [
         ["A","B","E"],
